@@ -1,0 +1,6 @@
+framework module Pods_Quizzical {
+  umbrella header "Pods-Quizzical-umbrella.h"
+
+  export *
+  module * { export * }
+}
