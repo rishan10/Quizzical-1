@@ -1,5 +1,5 @@
 import logging
-from flask import Flask,jsonify
+from flask import Flask, jsonify
 from google.cloud import vision
 from google.cloud.vision import types as typesImg
 from google.cloud import language
@@ -17,6 +17,7 @@ import os
 import json
 import random
 
+
 def detect_text_uri(uri):
     """Detects text in the file located in Google Cloud Storage or on the Web.
     """
@@ -28,6 +29,7 @@ def detect_text_uri(uri):
     texts = response.text_annotations
     s = texts[0].description.replace('\n', ' ')
     return s
+
 
 def detect_document_uri(uri):
     """Detects document features in the file located in Google Cloud
@@ -53,9 +55,10 @@ def detect_document_uri(uri):
                     blockText += " "
                 block_words.extend(paragraph.words)
 
-            if(len(blockText) >= 50):
+            if (len(blockText) >= 50):
                 s += blockText
     return s
+
 
 def getText():
     config = {
@@ -67,7 +70,6 @@ def getText():
         "messagingSenderId": "549005474865"
     }
     firebase = pyrebase.initialize_app(config)
-
 
     storage = firebase.storage()
     url = storage.child("images/image.png").get_url(None)
@@ -112,9 +114,10 @@ def log_error(e):
     """
     print(e)
 
+
 def getAnswerChoices(queryString):
     query = queryString
-    raw_html = simple_get("https://www.google.com/search?q="+query+"&cad=h")
+    raw_html = simple_get("https://www.google.com/search?q=" + query + "&cad=h")
 
     raw_html = raw_html[raw_html.find("People also search for".encode()):]
 
@@ -126,7 +129,6 @@ def getAnswerChoices(queryString):
 
     choices = []
 
-
     for i in range(len(mydivs)):
         if i >= 3:
             break
@@ -135,6 +137,7 @@ def getAnswerChoices(queryString):
             # print(str(mydivs[i].text))
 
     return choices
+
 
 getAnswerChoices('Special Relativity')
 
@@ -463,14 +466,18 @@ def generateNumericalAnswerChoices(correct_answer):
 
 
 def fillAnswerChoices(correct_answers):
+    answer_choices = []
     for answer in correct_answers:
         answer_choices.append(generateNumericalAnswerChoices(answer))
+    return answer_choices
 
 
 def QandA(text):
-    document = typesLang.Document(
-        content=text,
-        type=enums.Document.Type.PLAIN_TEXT)
+    questions = []
+    correct_answers = []
+    answer_choices = []
+    document = typesLang.Document(content=text,
+                                  type=enums.Document.Type.PLAIN_TEXT)
 
     raw_sentences = client.analyze_syntax(document).sentences
     sentences = []
@@ -501,7 +508,7 @@ def QandA(text):
             correct_answers.append(correctAnswer)
             questions.append(question)
 
-    fillAnswerChoices(correct_answers)
+        answer_choices = fillAnswerChoices(correct_answers)
 
     data = []
     for i in range(len(questions)):
@@ -510,6 +517,7 @@ def QandA(text):
 
     return data
 
+
 def generateQuestions(testString):
     numData = QandA(testString)
     mcData = getQuestionData(testString)
@@ -517,15 +525,16 @@ def generateQuestions(testString):
     return data
 
 
-
-
 app = Flask(__name__)
+
 
 @app.route('/')
 def main():
-	text = getText()
-	questions = generateQuestions(text)
-	return jsonify(questions)
+    text = getText()
+    print(text)
+    questions = generateQuestions(text)
+    return jsonify(questions)
+
 
 if __name__ == '__main__':
-	app.run(host = '127.0.0.1', port=8080, debug = True)
+    app.run(host='127.0.0.1', port=8080, debug=True)
