@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52937EBD7D7D130C7B7799F9 /* Pods_Quizzical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDC758A4195740CE3E0AC8D /* Pods_Quizzical.framework */; };
+		95122AD8207011D3000FAB60 /* arrow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 95122AD7207011D2000FAB60 /* arrow1.png */; };
+		95122ADA20702370000FAB60 /* ScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95122AD920702370000FAB60 /* ScoreVC.swift */; };
+		95B46F18206F7BFB00AACE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F17206F7BFB00AACE71 /* AppDelegate.swift */; };
+		95B46F1A206F7BFB00AACE71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F19206F7BFB00AACE71 /* ViewController.swift */; };
+		95B46F1D206F7BFB00AACE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B46F1B206F7BFB00AACE71 /* Main.storyboard */; };
+		95B46F1F206F7BFB00AACE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B46F1E206F7BFB00AACE71 /* Assets.xcassets */; };
+		95B46F22206F7BFB00AACE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B46F20206F7BFB00AACE71 /* LaunchScreen.storyboard */; };
+		95B46F2A206F7CAA00AACE71 /* teacher.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B46F29206F7CAA00AACE71 /* teacher.png */; };
+		95B46F2C206F879100AACE71 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F2B206F879100AACE71 /* PhotoVC.swift */; };
+		95B46F2E206F8ED700AACE71 /* titlePic.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B46F2D206F8ED700AACE71 /* titlePic.png */; };
+		95B46F30206F936A00AACE71 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B46F2F206F936A00AACE71 /* QuizVC.swift */; };
+		95B5EB7B2070452F002D1D00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */; };
+		95B5EB7F20707A29002D1D00 /* ShortAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B5EB7E20707A29002D1D00 /* ShortAVC.swift */; };
+		95B5EB812070BFEF002D1D00 /* JsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B5EB802070BFEF002D1D00 /* JsonParse.swift */; };
+		95B5EB832070D896002D1D00 /* stuff.json in Resources */ = {isa = PBXBuildFile; fileRef = 95B5EB822070D896002D1D00 /* stuff.json */; };
+		95F747A620702F9F00559D52 /* arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A520702F9E00559D52 /* arrow2.png */; };
+		95F747A820702FE100559D52 /* arrow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A720702FE100559D52 /* arrow3.png */; };
+		95F747AA2070303800559D52 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 95F747A92070303700559D52 /* arrow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EDC758A4195740CE3E0AC8D /* Pods_Quizzical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quizzical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95122AD7207011D2000FAB60 /* arrow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1.png; sourceTree = "<group>"; };
+		95122AD920702370000FAB60 /* ScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreVC.swift; sourceTree = "<group>"; };
+		95B46F14206F7BFB00AACE71 /* Quizzical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B46F17206F7BFB00AACE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95B46F19206F7BFB00AACE71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95B46F1C206F7BFB00AACE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95B46F1E206F7BFB00AACE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95B46F21206F7BFB00AACE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95B46F23206F7BFB00AACE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B46F29206F7CAA00AACE71 /* teacher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacher.png; sourceTree = "<group>"; };
+		95B46F2B206F879100AACE71 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		95B46F2D206F8ED700AACE71 /* titlePic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlePic.png; sourceTree = "<group>"; };
+		95B46F2F206F936A00AACE71 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
+		95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95B5EB7E20707A29002D1D00 /* ShortAVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortAVC.swift; sourceTree = "<group>"; };
+		95B5EB802070BFEF002D1D00 /* JsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParse.swift; sourceTree = "<group>"; };
+		95B5EB822070D896002D1D00 /* stuff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stuff.json; sourceTree = "<group>"; };
+		95F747A520702F9E00559D52 /* arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow2.png; sourceTree = "<group>"; };
+		95F747A720702FE100559D52 /* arrow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow3.png; sourceTree = "<group>"; };
+		95F747A92070303700559D52 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		9AA51A0118B2068D85A93613 /* Pods-Quizzical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzical.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical.release.xcconfig"; sourceTree = "<group>"; };
+		AE299096ED34DB96E6D1DF28 /* Pods-Quizzical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzical.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95B46F11206F7BFB00AACE71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52937EBD7D7D130C7B7799F9 /* Pods_Quizzical.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16ACD39EDF7BBF879CEDAAF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE299096ED34DB96E6D1DF28 /* Pods-Quizzical.debug.xcconfig */,
+				9AA51A0118B2068D85A93613 /* Pods-Quizzical.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95B46F0B206F7BFB00AACE71 = {
+			isa = PBXGroup;
+			children = (
+				95B46F16206F7BFB00AACE71 /* Quizzical */,
+				95B46F15206F7BFB00AACE71 /* Products */,
+				16ACD39EDF7BBF879CEDAAF2 /* Pods */,
+				E891283BE1E237D88FB89CC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95B46F15206F7BFB00AACE71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95B46F14206F7BFB00AACE71 /* Quizzical.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95B46F16206F7BFB00AACE71 /* Quizzical */ = {
+			isa = PBXGroup;
+			children = (
+				95B46F17206F7BFB00AACE71 /* AppDelegate.swift */,
+				95B46F19206F7BFB00AACE71 /* ViewController.swift */,
+				95B46F1B206F7BFB00AACE71 /* Main.storyboard */,
+				95122AD920702370000FAB60 /* ScoreVC.swift */,
+				95B5EB802070BFEF002D1D00 /* JsonParse.swift */,
+				95B5EB7E20707A29002D1D00 /* ShortAVC.swift */,
+				95B46F2F206F936A00AACE71 /* QuizVC.swift */,
+				95B46F2B206F879100AACE71 /* PhotoVC.swift */,
+				95B46F29206F7CAA00AACE71 /* teacher.png */,
+				95B46F2D206F8ED700AACE71 /* titlePic.png */,
+				95F747A92070303700559D52 /* arrow.png */,
+				95F747A720702FE100559D52 /* arrow3.png */,
+				95F747A520702F9E00559D52 /* arrow2.png */,
+				95122AD7207011D2000FAB60 /* arrow1.png */,
+				95B5EB822070D896002D1D00 /* stuff.json */,
+				95B46F1E206F7BFB00AACE71 /* Assets.xcassets */,
+				95B46F20206F7BFB00AACE71 /* LaunchScreen.storyboard */,
+				95B46F23206F7BFB00AACE71 /* Info.plist */,
+				95B5EB7A2070452F002D1D00 /* GoogleService-Info.plist */,
+			);
+			path = Quizzical;
+			sourceTree = "<group>";
+		};
+		E891283BE1E237D88FB89CC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC758A4195740CE3E0AC8D /* Pods_Quizzical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95B46F13206F7BFB00AACE71 /* Quizzical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B46F26206F7BFB00AACE71 /* Build configuration list for PBXNativeTarget "Quizzical" */;
+			buildPhases = (
+				C4E90CC3C845973CEFE9BBEB /* [CP] Check Pods Manifest.lock */,
+				95B46F10206F7BFB00AACE71 /* Sources */,
+				95B46F11206F7BFB00AACE71 /* Frameworks */,
+				95B46F12206F7BFB00AACE71 /* Resources */,
+				A2753C55F1509231BE3762A6 /* [CP] Embed Pods Frameworks */,
+				E3C3218D1C69C0CEC4A5C433 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quizzical;
+			productName = Quizzical;
+			productReference = 95B46F14206F7BFB00AACE71 /* Quizzical.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95B46F0C206F7BFB00AACE71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ruchapatki;
+				TargetAttributes = {
+					95B46F13206F7BFB00AACE71 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95B46F0F206F7BFB00AACE71 /* Build configuration list for PBXProject "Quizzical" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95B46F0B206F7BFB00AACE71;
+			productRefGroup = 95B46F15206F7BFB00AACE71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95B46F13206F7BFB00AACE71 /* Quizzical */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95B46F12206F7BFB00AACE71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B46F22206F7BFB00AACE71 /* LaunchScreen.storyboard in Resources */,
+				95122AD8207011D3000FAB60 /* arrow1.png in Resources */,
+				95B5EB832070D896002D1D00 /* stuff.json in Resources */,
+				95B46F1F206F7BFB00AACE71 /* Assets.xcassets in Resources */,
+				95B46F2A206F7CAA00AACE71 /* teacher.png in Resources */,
+				95F747AA2070303800559D52 /* arrow.png in Resources */,
+				95B46F1D206F7BFB00AACE71 /* Main.storyboard in Resources */,
+				95F747A620702F9F00559D52 /* arrow2.png in Resources */,
+				95B5EB7B2070452F002D1D00 /* GoogleService-Info.plist in Resources */,
+				95B46F2E206F8ED700AACE71 /* titlePic.png in Resources */,
+				95F747A820702FE100559D52 /* arrow3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2753C55F1509231BE3762A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/OpalImagePicker/OpalImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpalImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E90CC3C845973CEFE9BBEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quizzical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C3218D1C69C0CEC4A5C433 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quizzical/Pods-Quizzical-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95B46F10206F7BFB00AACE71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B46F1A206F7BFB00AACE71 /* ViewController.swift in Sources */,
+				95B5EB812070BFEF002D1D00 /* JsonParse.swift in Sources */,
+				95122ADA20702370000FAB60 /* ScoreVC.swift in Sources */,
+				95B5EB7F20707A29002D1D00 /* ShortAVC.swift in Sources */,
+				95B46F30206F936A00AACE71 /* QuizVC.swift in Sources */,
+				95B46F18206F7BFB00AACE71 /* AppDelegate.swift in Sources */,
+				95B46F2C206F879100AACE71 /* PhotoVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95B46F1B206F7BFB00AACE71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95B46F1C206F7BFB00AACE71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95B46F20206F7BFB00AACE71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95B46F21206F7BFB00AACE71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95B46F24206F7BFB00AACE71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95B46F25206F7BFB00AACE71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95B46F27206F7BFB00AACE71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE299096ED34DB96E6D1DF28 /* Pods-Quizzical.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Quizzical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchapatki.Quizzical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95B46F28206F7BFB00AACE71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA51A0118B2068D85A93613 /* Pods-Quizzical.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Quizzical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchapatki.Quizzical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95B46F0F206F7BFB00AACE71 /* Build configuration list for PBXProject "Quizzical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B46F24206F7BFB00AACE71 /* Debug */,
+				95B46F25206F7BFB00AACE71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B46F26206F7BFB00AACE71 /* Build configuration list for PBXNativeTarget "Quizzical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B46F27206F7BFB00AACE71 /* Debug */,
+				95B46F28206F7BFB00AACE71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95B46F0C206F7BFB00AACE71 /* Project object */;
+}
